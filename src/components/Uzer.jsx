@@ -37,7 +37,7 @@ const Uzer = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div class="loader"></div>;
   }
 
   if (error) {
@@ -70,8 +70,8 @@ const Uzer = () => {
               <p># NAME: {user.name}</p>
               <p># USER NAME: {user.username}</p>
               <div className="w-full flex justify-evenly user__btn">
-                <button className="animated-button"><span>USER TODOS</span><span></span></button>
-                <button className="animated-button"><span>GALLERY</span><span></span></button>
+                <button className="animated-button us__btn "><span>USER TODOS</span><span></span></button>
+                <button className="animated-button us__btn uz__btn  "><span>GALLERY</span><span></span></button>
               </div>
             </div>
           ))}
